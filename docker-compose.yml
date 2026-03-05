@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  filament-os:
+    image: qwejun/filament-os:latest
+    container_name: filament-os
+    restart: unless-stopped
+    ports:
+      - "2233:2233"
+    volumes:
+      - ./data:/app/data
+      - ./backups:/app/backups
+      - ./uploads:/app/uploads
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=file:/app/data/database.sqlite
+      - NITRO_HOST=0.0.0.0
+      - NITRO_PORT=2233
+      - INIT_ADMIN_USERNAME=${ADMIN_USER:-admin}
+      - INIT_ADMIN_PASSWORD=${ADMIN_PASS:-ChangeMe123}
+      - UPLOAD_DIR=/app/uploads
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:2233"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
