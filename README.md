@@ -203,7 +203,8 @@
     │  绑定    绑定            │
     │  #2403  #2404            │
     └─────────────────────────┘
-```
+```<img width="1304" height="578" alt="打印机界面" src="https://github.com/user-attachments/assets/2c472f02-3834-4caf-8715-866080fad418" />
+
 
 **一键槽位绑定**
 
