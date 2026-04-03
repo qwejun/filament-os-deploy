@@ -873,4 +873,5 @@ MIT License - 自由使用、修改、分发
 *Made with ❤️ by baojunwang*
 
 *让耗材管理变得简单、智能、高效*
+以上文档全部由AI编写，可能和实际功能不符，有问题骂AI
 
