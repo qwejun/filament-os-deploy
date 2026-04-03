@@ -699,7 +699,7 @@ curl http://localhost:5000/printers
 │  Bambu Cloud API                        │
 │  MQTT 打印机通信                         │
 │  OpenAI/智谱/DeepSeek API               │
-│  Home Assistant Webhook                 │
+│  pybambu (HASS Bambu Lab 插件)          │
 └─────────────────────────────────────────┘
 ```
 
