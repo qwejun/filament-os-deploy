@@ -31,6 +31,8 @@
 - ✅ 材质类型（PLA、PETG、ABS、TPU、ASA、PC 等）
 - ✅ 颜色名称 + 色号（如"11100 象牙白"）
 - ✅ 重量规格（1kg、500g、250g）
+- <img width="1019" height="893" alt="桌面" src="https://github.com/user-attachments/assets/60b5ba68-6d8b-4602-8d6d-7debac4451bb" />
+
 
 **批量入库模式**
 
