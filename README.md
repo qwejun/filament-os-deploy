@@ -164,7 +164,7 @@
 │  └─ 最后在线: 2 小时前                   │
 │                                         │
 └─────────────────────────────────────────┘
-```<img width="1304" height="578" alt="打印机界面" src="https://github.com/user-attachments/assets/ab26188f-bf00-460d-8199-be19b7a0e124" />
+
 
 
 **支持的打印机型号**
@@ -203,7 +203,8 @@
     │  绑定    绑定            │
     │  #2403  #2404            │
     └─────────────────────────┘
-```<img width="1304" height="578" alt="打印机界面" src="https://github.com/user-attachments/assets/2c472f02-3834-4caf-8715-866080fad418" />
+<img width="1304" height="578" alt="打印机界面" src="https://github.com/user-attachments/assets/29be3aec-71b7-419a-8b2c-97b1ef23a454" />
+
 
 
 **一键槽位绑定**
@@ -411,6 +412,7 @@ AI 分析:
 │    (库存充足，颜色匹配)         │
 └─────────────────────────────────┘
 ```
+<img width="496" height="552" alt="AI聊天" src="https://github.com/user-attachments/assets/867bc33d-830c-457c-8293-3b4ba8909e54" />
 
 ***
 
