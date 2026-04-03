@@ -113,6 +113,7 @@
 │  💡 关联: 绑定在 X1C 的 AMS A1 槽位     │
 └─────────────────────────────────────────┘
 ```
+<img width="889" height="828" alt="扣料" src="https://github.com/user-attachments/assets/d94798a8-d506-46a6-b27f-f4da16630e2d" />
 
 **扣料记录详情**
 
@@ -163,7 +164,8 @@
 │  └─ 最后在线: 2 小时前                   │
 │                                         │
 └─────────────────────────────────────────┘
-```
+```<img width="1304" height="578" alt="打印机界面" src="https://github.com/user-attachments/assets/ab26188f-bf00-460d-8199-be19b7a0e124" />
+
 
 **支持的打印机型号**
 
@@ -253,6 +255,7 @@ A4 (绿色):  使用 81-100层→ 扣除 20g
 - 适合监控，不适合实时控制
 
 ***
+<img width="1082" height="673" alt="视频监控" src="https://github.com/user-attachments/assets/912257fe-bf21-47ae-b655-c650caa79575" />
 
 ### 2.4 远程打印控制
 
@@ -379,6 +382,7 @@ AI 分析:
 │ 📊 耗材占比: 72%                │
 └─────────────────────────────────┘
 ```
+<img width="496" height="552" alt="AI聊天" src="https://github.com/user-attachments/assets/a5814825-e70e-4ca9-ab59-8560ab1f7c33" />
 
 ***
 
