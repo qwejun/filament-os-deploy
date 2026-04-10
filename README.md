@@ -11,10 +11,10 @@ cp .env.example .env
 # 编辑 .env 文件，设置你自己的管理员账号密码
 
 # 3. 创建数据目录
-mkdir -p data backups uploads bambu-config bambu-streams recordings logs
+mkdir -p data recordings bambu-streams backups logs
 
 # 4. 启动服务
-docker compose -f docker-compose-go.yml up -d
+docker compose up -d
 
 # 5. 查看日志
 docker logs -f filament-os-go
@@ -52,13 +52,11 @@ INIT_ADMIN_PASSWORD=你的密码
 所有数据保存在当前目录的子文件夹中：
 
 ```
-./data          # SQLite 数据库
-./backups       # 备份文件
-./uploads       # 上传文件
-./bambu-config  # 打印机登录状态
-./bambu-streams # 视频流缓存
-./recordings    # 录像文件
-./logs          # 日志文件
+./data           # SQLite 数据库、会话文件
+./backups        # FTP 备份文件
+./bambu-streams  # 视频流缓存
+./recordings     # 录像文件
+./logs           # 日志文件
 ```
 
 ## 注意事项

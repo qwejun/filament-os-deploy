@@ -6,20 +6,16 @@ services:
     container_name: filament-os-go
     restart: unless-stopped
     ports:
-      - "${PORT:-2233}:2233"
+      - "${PORT:-2233}:5000"
     volumes:
-      # 主应用数据（SQLite数据库）
+      # 主应用数据（SQLite数据库、会话等）
       - ./data:/app/data
-      # 备份文件
-      - ./backups:/app/backups
-      # 上传文件
-      - ./uploads:/app/uploads
-      # 打印机服务配置（登录状态持久化）
-      - ./bambu-config:/app/bambu-config
+      # 打印机录像存储
+      - ./recordings:/app/data/bambu-recordings
       # 视频流缓存
-      - ./bambu-streams:/app/bambu-streams
-      # 录像存储
-      - ./recordings:/app/recordings
+      - ./bambu-streams:/app/data/bambu-streams
+      # FTP 备份
+      - ./backups:/app/data/ftp_backup
       # 日志存储
       - ./logs:/app/logs
     environment:
@@ -35,7 +31,7 @@ services:
       # - BAMBU_USERNAME=
       # - BAMBU_PASSWORD=
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:2233/api/health"]
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:5000/api/health"]
       interval: 30s
       timeout: 10s
       retries: 3
