@@ -11,25 +11,20 @@ services:
       # 主应用数据（SQLite数据库、会话等）
       - ./data:/app/data
       # 打印机录像存储
-      - ./recordings:/app/data/bambu-recordings
+      - ./recordings:/app/recordings
       # 视频流缓存
-      - ./bambu-streams:/app/data/bambu-streams
+      - ./bambu-streams:/app/bambu-streams
       # FTP 备份
-      - ./backups:/app/data/ftp_backup
+      - ./backups:/app/backups
       # 日志存储
       - ./logs:/app/logs
     environment:
       # 管理员账号配置（必须设置！）
-      # 首次启动时自动创建管理员账号
       - INIT_ADMIN_USERNAME=${INIT_ADMIN_USERNAME}
       - INIT_ADMIN_PASSWORD=${INIT_ADMIN_PASSWORD}
-      # JWT密钥（可选，不设置则自动生成）
-      # - JWT_SECRET=your-secret-key-here
-      # Bambu Cloud 配置（可选）
-      # - CONNECTION_MODE=cloud
-      # - BAMBU_REGION=cn
-      # - BAMBU_USERNAME=
-      # - BAMBU_PASSWORD=
+      # 路径配置（对齐原有 NAS 挂载）
+      - RECORDING_DIR=/app/recordings
+      - STREAMS_DIR=/app/bambu-streams
     healthcheck:
       test: ["CMD", "wget", "-q", "--spider", "http://localhost:5000/api/health"]
       interval: 30s
